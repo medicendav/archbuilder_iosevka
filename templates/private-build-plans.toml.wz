@@ -52,11 +52,6 @@ shape = 500
 menu = 500
 css = 500
 
-[buildPlans.iosevka-custom.weights.semibold]
-shape = 600
-menu = 600
-css = 600
-
 [buildPlans.iosevka-custom.weights.bold]
 shape = 700
 menu = 700
