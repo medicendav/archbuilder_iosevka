@@ -1,7 +1,7 @@
 build:
   # - ttf-iosevka-git
-  # - ttf-iosevka-custom-git
-  - ttf-iosevka-term-custom-git
+   - ttf-iosevka-custom-git
+  #- ttf-iosevka-term-custom-git
   # - ttf-iosevka-fontconfig-mono-custom-git
   # - ttf-iosevka-fixed-custom-git
 spacings:
