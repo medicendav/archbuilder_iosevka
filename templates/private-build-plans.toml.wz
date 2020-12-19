@@ -1,32 +1,36 @@
-@require(charvars, spacings)
-@for spacing in spacings:
-[buildPlans.iosevka-@{spacing and spacing + '-' or ''}custom]
-family = "Iosevka @{spacing and spacing.replace('-', ' ').title() + ' ' or ''}Custom"
-@if spacing:
-spacing = "@spacing"
-@end
+[buildPlans.iosevka-custom]
+family = "Iosevka Custom"
+spacing = "normal"
+serifs = "sans"
 
-# [buildPlans.iosevka-@{spacing and spacing + '-' or ''}custom.variants]
-# https://github.com/be5invis/Iosevka/tree/dev-v4#stylistic-sets
-# inherits = "ss14"
-
-[buildPlans.iosevka-@{spacing and spacing + '-' or ''}custom.variants.design]
-# https://github.com/be5invis/Iosevka/tree/dev-v4#configuring-character-variants
-# https://github.com/be5invis/Iosevka/raw/dev-v4/images/charvars.png
-@for char, style in charvars.items():
-@char = "@style"
-@end
-
-# Override above variants for each slope:
-# [buildPlans.iosevka-@{spacing and spacing + '-' or ''}custom.variants.upright]
-# [buildPlans.iosevka-@{spacing and spacing + '-' or ''}custom.variants.italic]
-# [buildPlans.iosevka-@{spacing and spacing + '-' or ''}custom.variants.oblique]
-
-# [buildPlans.iosevka-@{spacing and spacing + '-' or ''}custom.ligations]
-# https://github.com/be5invis/Iosevka/tree/dev-v4#configuring-ligations
-# https://github.com/be5invis/Iosevka/tree/dev-v4#ligations
-# inherits = "calt"
-# disables = []
-# enables = []
-
-@end
+[buildPlans.iosevka-custom.variants.design]
+a = "doublestorey-toothless-corner"
+b = "toothless-corner"
+d = "toothless-rounded"
+g = "earless-corner"
+i = "serifed-tailed"
+j = "flat-hook-serifed"
+k = "curly"
+l = "serifed-tailed"
+m = "earless-corner-double-arch-shortleg"
+n = "earless-corner-straight"
+p = "earless-rounded"
+q = "earless-rounded"
+r = "earless-rounded"
+u = "toothless-corner"
+v = "curly"
+w = "curly"
+x = "curly"
+y = "cursive"
+z = "with-horizontal-crossbar"
+zero = "dotted"
+asterisk = "flip-penta-low"
+underscore = "above-baseline"
+number-sign = "upright-open"
+ampersand = "upper-open"
+at = "short"
+dollar = "open"
+percent = "dots"
+lig-ltgteq = "slanted"
+e = "flat-crossbar"
+cyrl-capital-u = "straight"
